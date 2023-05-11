@@ -1,0 +1,16 @@
+let minutes = 0;
+let  temperature  = prompt("Введите температуру : ");
+let  isRaining  = false;
+if (isRaining != false){
+  minutes =  0;
+} else if ((temperature < 0) || (temperature > 35 )){
+  minutes = 0;
+}else if (temperature == 20){
+  minutes =  20;
+}else if (temperature > 20){
+  minutes = (20-(temperature - 20));
+}
+else if (temperature < 20){
+  minutes = (20-(20-temperature));
+}
+alert(minutes);

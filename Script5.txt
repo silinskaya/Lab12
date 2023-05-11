@@ -1,0 +1,8 @@
+let a = prompt("¬ведите число: ");
+a = Number(a);
+let sum = 0;
+while (a > 0){
+    a = Math.floor(a / 10);
+    sum +=1;
+}
+alert(sum);

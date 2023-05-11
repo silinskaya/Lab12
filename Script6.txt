@@ -1,0 +1,15 @@
+let a = prompt("¬ведите число: ");
+a = Number(a);
+let result = 0;
+let copy_a = a;
+while (a != 0){
+    let digit = a % 10;
+    result = result*10 + digit;
+    a = Math.floor(a / 10);
+}
+if (result == copy_a){
+    alert('явл€етс€ палиндромом');
+}
+else if ( result != copy_a){
+    alert('Ќе €вл€етс€ палиндромом');
+}
